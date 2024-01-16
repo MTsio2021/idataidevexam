@@ -1,5 +1,8 @@
 name: exercice2
 
+on:
+ workflow_dispatch:
+
 env:
   a: 12
   b: 22
