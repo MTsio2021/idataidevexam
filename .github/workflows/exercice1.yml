@@ -7,7 +7,7 @@ on:
 
 jobs:
   job1:
-    runs-on: unbuntu-latest
+    runs-on: ubuntu-latest
     env:
       VAR1: 111
     steps:
@@ -18,7 +18,7 @@ jobs:
   job2:
     needs: job1
     if: failure()
-    runs-on: unbuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Step 1
         run: |
