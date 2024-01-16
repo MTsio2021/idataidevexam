@@ -1,0 +1,18 @@
+name: exercie1
+
+on: [push]
+
+jobs:
+  job1:
+    runs-on: unbuntu-latest
+    env:
+      VAR1: 111
+    run: |
+      echo $VAR1
+
+  job2:
+    needs: job1
+    runs-on: unbuntu-latest
+    run: |
+      echo "le job précédent à échoué"
+    
