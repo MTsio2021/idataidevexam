@@ -1,6 +1,9 @@
 name: exercie1
 
-on: [push]
+on:
+  push:
+    tags:
+    - 'release*'
 
 jobs:
   job1:
