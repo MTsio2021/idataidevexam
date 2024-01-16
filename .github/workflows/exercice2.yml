@@ -14,7 +14,7 @@ jobs:
       - name: Step1
         if: $a > 0 && $b > 0
         run: |
-          echo "La valeur de a est ${{ a }} et la valeur de b est ${{ b }}"
+          echo "La valeur de a est ${{ env.a }} et la valeur de b est ${{ env.b }}"
   
   job2:
     runs-on: ubuntu-latest
