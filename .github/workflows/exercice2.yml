@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Step1
-        if: $a > 0 && $b > 0
+        if: ${{ env.a }} > 0 && ${{ env.b }} > 0
         run: |
           echo "La valeur de a est ${{ env.a }} et la valeur de b est ${{ env.b }}"
   
