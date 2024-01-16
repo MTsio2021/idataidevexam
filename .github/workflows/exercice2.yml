@@ -31,3 +31,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       
+      - name: Execute Python file
+        run: |
+          python multiplication.py
+      
+      
