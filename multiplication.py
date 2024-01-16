@@ -2,4 +2,4 @@ import os
 
 var = int(os.environ['a'] * os.environ['b'])
 
-return var
+print(var)
