@@ -15,6 +15,7 @@ jobs:
 
   job2:
     needs: job1
+    if: failure()
     runs-on: unbuntu-latest
     run: |
       echo "le job précédent à échoué"
