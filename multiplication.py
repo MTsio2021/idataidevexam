@@ -1,4 +1,4 @@
-import os 
+import os, numpy
 
 mult = int(os.environ["a"]) * int(os.environ["b"])
 
