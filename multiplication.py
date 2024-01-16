@@ -1,5 +1,5 @@
 import os 
 
-var = int(os.environ[a] * os.environ[b])
+var = int(os.environ['env.a'] * os.environ['env.b'])
 
 print(var)
